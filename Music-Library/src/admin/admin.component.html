@@ -1,0 +1,74 @@
+
+
+<div class="container-login" style="background-image: url('assets/back.jpeg');">
+    <div class="wrap-login" id="add" style="padding : 80px 55px 30px 55px">
+    <form #adminid="ngForm"  (ngSubmit)="addsong(adminid.value)"> 
+        <span class="sign" style="padding-bottom: 37px">
+                Admin
+        </span>
+        <table>
+        
+        
+                <tr>
+                    <td style="color: white;">
+                        Song name 
+                    </td>
+                    <td>
+                    <input class="input"  type="text" name="songname" [(ngModel)]="this.songname" >
+                    </td>
+                
+                </tr>
+                <br/>
+                <tr>
+                        <td style="color: white;">
+                            Album name 
+                        </td>
+                        <td>
+                        <input class="input"  type="text" name="alname" [(ngModel)]="this.album" >
+                        </td>
+                    
+                    </tr>
+                    <br/>
+                    <tr>
+                        
+                            <td style="color: white;">
+                                Artist name 
+                            </td>
+                            <td>
+                            <input class="input"  type="text" name="arname" [(ngModel)]="this.artist" >
+                            </td>
+                        
+                        </tr>
+                    <br/>
+                        <tr>
+                                <td style="color: white;">
+                                    File location 
+                                </td>
+                                <td>
+                                <input style="color: white;"  type="file" name="location" [(ngModel)]="this.location">
+                                </td>
+                            
+                            </tr>
+
+        
+            <br/>
+        </table>
+        <div align="center">
+				<button class="login-btn">
+					Add
+				</button>
+            </div>
+            <div class="create" align="center">
+                    <a [routerLink]="['/updatesong']" style="font-size: 20px ">
+                       Update
+                   </a>
+                   <br/>
+                   <a [routerLink]="['/delsong']" style="font-size: 20px ">
+                    Delete
+                </a>
+               </div>
+        
+</form>
+    </div>
+    
+</div>

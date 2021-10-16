@@ -1,0 +1,36 @@
+<div class="container-login" style="background-image: url('assets/back.jpeg');">
+    <div class="wrap-login" style="padding : 80px 55px 30px 55px">
+
+<form #registerid="ngForm"  (ngSubmit)=register(registerid.value)>
+        <span class="sign" style="padding-bottom: 37px">
+                Sign In
+        </span>
+
+        <div class="validate-input" style="margin-bottom: 20px">
+                <input class="input" [(ngModel)]="this.username" type="text" name="username" placeholder="Username">
+                <span class="focus-input"></span>
+        </div>
+        
+        <div class=" validate-input" style="margin-bottom: 25px">
+            <input class="input" type="text" [(ngModel)]="this.email" name="email" placeholder="E-mail">
+            <span class="focus-input"></span>
+        </div>
+
+        <div class=" validate-input" style="margin-bottom: 25px">
+                <input class="input" [(ngModel)]="this.password" type="password" name="pass" placeholder="Password">
+                <span class="focus-input"></span>
+            </div>
+        
+              
+        <div align="center">
+				<button class="login-btn">
+					Sign Up
+				</button>
+            </div>
+            <br/>
+            
+</form>
+    </div>
+</div>
+
+
